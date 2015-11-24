@@ -49,6 +49,8 @@ The unittest is written as follows:
 class PersonTest : Test {
   handle = 'Test', name = 'Unit Tester';
 
+  // ... shortened for brevity ...
+
   @test def name_accessor() {
     this.assertEquals(this.name, new Person(this.handle, this.name).name);
   }
