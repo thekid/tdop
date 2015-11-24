@@ -1,0 +1,11 @@
+class Failed {
+  message;
+
+  def this(message) {
+    this.message = message;
+  }
+
+  def toString() {
+    return this.class.name ~ '("' ~ this.message ~ '")';
+  }
+}

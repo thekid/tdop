@@ -1,0 +1,17 @@
+/**
+ * The person class represents a person handle, e.g. `@friebe`
+ *
+ * @test PersonTest
+ */
+class Person {
+  handle, name;
+
+  def this(handle, name) {
+    this.handle = handle ?? null;
+    this.name = name ?? null;
+  }
+
+  def toString() {
+    return 'Person<@' ~ this.handle ~ '>';
+  }
+}

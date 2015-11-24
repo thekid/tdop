@@ -1,0 +1,13 @@
+// Greet the person, underline
+def greet(person) {
+  var greeting = 'Hello ' ~ person.toString();
+
+  print greeting;
+  print '=' × greeting.length;
+}
+
+var person = new Person(args[0] ?? 'Test');
+print 'Instantiated ' ~ person.class.name ~ ' w/ ' ~ args.length ~ ' args';
+
+greet(person);
+return 0;

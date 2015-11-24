@@ -1,0 +1,16 @@
+var test = new Type(args[0]);
+
+print 'Running tests in ' ~ test.name ~ ':';
+
+foreach (method : test.methods()) {
+  if (method.annotationPresent('test')) {
+    try {
+      method.invoke(test.newInstance());
+      print '✓ OK ' ~ method.name;
+    } catch (e) {
+      print '✗ FAIL ' ~ method.name ~ ': ' ~ e.toString();
+    }
+  }
+}
+
+return 0;

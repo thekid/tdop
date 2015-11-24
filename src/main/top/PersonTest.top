@@ -1,0 +1,27 @@
+class PersonTest : Test {
+  handle = 'Test', name = 'Unit Tester';
+
+  @test def can_create() {
+    new Person();
+  }
+
+  @test def create_with_handle() {
+    new Person(this.handle);
+  }
+
+  @test def create_with_handle_and_name() {
+    new Person(this.handle, this.name);
+  }
+
+  @test def handle_accessor() {
+    this.assertEquals(this.handle, new Person(this.handle).handle);
+  }
+
+  @test def handle_accessor() {
+    this.assertEquals(this.name, new Person(this.handle, this.name).name);
+  }
+
+  @test def string_representation() {
+    this.assertEquals('Person<@Test>', new Person(this.handle).toString());
+  }
+}

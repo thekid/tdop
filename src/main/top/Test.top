@@ -1,0 +1,8 @@
+class Test {
+
+  def assertEquals(a, b) {
+    if (a != b) {
+      throw new Failed('Expected ' ~ a ~ ' but have ' ~ b);
+    }
+  }
+}
