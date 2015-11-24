@@ -1,11 +1,11 @@
 TDOP Experiment
 ===============
 
-Inspired by Douglas Crockford's [talk at the goto; conference]() about [top down operator precence](http://portal.acm.org/citation.cfm?id=512931), a PHP version of [the code explained here](http://javascript.crockford.com/tdop/tdop.html).
+Inspired by Douglas Crockford's [talk at the goto; conference](https://www.youtube.com/watch?v=Nlqv6NtBXcA) about [top down operator precence](http://portal.acm.org/citation.cfm?id=512931), a PHP version of [the code explained here](http://javascript.crockford.com/tdop/tdop.html).
 
 Code
 ----
-The following is our simplemost unittest runner written in **TOP**, the programming language I created with the above syntax.
+The following is our simplemost unittest runner written in **TOP**, the programming language I created with a TDOP parser.
 
 ```groovy
 var test = new Type(args[0]);
