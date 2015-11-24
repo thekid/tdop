@@ -17,7 +17,7 @@ class PersonTest : Test {
     this.assertEquals(this.handle, new Person(this.handle).handle);
   }
 
-  @test def handle_accessor() {
+  @test def name_accessor() {
     this.assertEquals(this.name, new Person(this.handle, this.name).name);
   }
 
